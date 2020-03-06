@@ -1,0 +1,15 @@
+.wp-block-whatever {
+	.block-editor-plain-text {
+		font-family: Menlo, Consolas, monaco, monospace;
+		font-size: 13px;
+		color: #23282d;
+		padding: 0.8em 1em;
+		border: 1px solid #e2e4e7;
+		border-radius: 4px;
+		max-height: 250px;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}

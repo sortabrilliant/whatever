@@ -1,0 +1,10 @@
+{
+	"name": "sortabrilliant/whatever",
+	"category": "embed",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html"
+		}
+	}
+}
