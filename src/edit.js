@@ -12,16 +12,14 @@ export default function WhateverEdit( props ) {
 			<Disabled.Consumer>
 				{ ( isDisabled ) =>
 					! isSelected || isDisabled ? (
-						<>
-							<SandBox html={ attributes.content } />
-						</>
+						<SandBox html={ attributes.content } />
 					) : (
 						<PlainText
 							value={ attributes.content }
 							onChange={ ( content ) =>
 								setAttributes( { content } )
 							}
-							placeholder="Paste your embeds..."
+							placeholder="Insert your embed code here"
 							aria-label="HTML"
 						/>
 					)
