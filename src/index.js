@@ -15,7 +15,8 @@ const { name, category, attributes } = metadata;
 
 registerBlockType( name, {
 	title: 'Whatever',
-	description: 'With Whatever you can embed whatever you want in your WordPress site.',
+	description:
+		'With Whatever you can embed whatever you want in your WordPress site.',
 	keywords: [ 'embed' ],
 	supports: {
 		align: true,

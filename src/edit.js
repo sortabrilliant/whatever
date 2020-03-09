@@ -12,7 +12,9 @@ import { Disabled, SandBox } from '@wordpress/components';
 export default function WhateverEdit( props ) {
 	const { attributes, isSelected, setAttributes } = props;
 
-	const classes = getClassNames( attributes.content, 'wp-block-whatever' );
+	const classes = isSelected
+		? 'wp-block-whatever'
+		: getClassNames( attributes.content, 'wp-block-whatever' );
 
 	return (
 		<div className={ classes }>
