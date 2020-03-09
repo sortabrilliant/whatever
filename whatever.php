@@ -44,9 +44,17 @@ function register_block() {
 		$asset_file['version']
 	);
 
+	wp_register_style(
+		'whatever-style',
+		plugins_url( 'build/style.css', __FILE__ ),
+		[],
+		$asset_file['version']
+	);
+
 	register_block_type( 'sortabrilliant/whatever', [
 		'editor_script'   => 'whatever',
 		'editor_style'    => 'whatever-editor-style',
+		'style'           => 'whatever-style',
 	] );
 }
 add_action( 'init', __NAMESPACE__ . '\\register_block' );
