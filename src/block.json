@@ -4,7 +4,8 @@
 	"attributes": {
 		"content": {
 			"type": "string",
-			"source": "html"
+			"source": "html",
+			"selector": ".wp-block-whatever"
 		}
 	}
 }
