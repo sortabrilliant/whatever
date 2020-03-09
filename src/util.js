@@ -1,8 +1,3 @@
-/**
- * External dependencies
- */
-import classnames from 'classnames/dedupe';
-
 export const ASPECT_RATIOS = [
 	// Common video resolutions.
 	{ ratio: '2.33', className: 'wp-embed-aspect-21-9' },
@@ -40,10 +35,11 @@ export function getClassNames( html, existingClassNames = '' ) {
 		) {
 			const potentialRatio = ASPECT_RATIOS[ ratioIndex ];
 			if ( aspectRatio >= potentialRatio.ratio ) {
-				return classnames( existingClassNames, {
-					[ potentialRatio.className ]: true,
-					'wp-has-aspect-ratio': true,
-				} );
+				return [
+					existingClassNames,
+					potentialRatio.className,
+					'wp-has-aspect-ratio',
+				].join( ' ' );
 			}
 		}
 	}
