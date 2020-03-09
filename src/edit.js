@@ -21,7 +21,7 @@ export default function WhateverEdit( props ) {
 			<Disabled.Consumer>
 				{ ( isDisabled ) =>
 					! isSelected || isDisabled ? (
-						<SandBox html={ attributes.content } />
+						<SandBox html={ attributes.content } type={ classes } />
 					) : (
 						<PlainText
 							value={ attributes.content }
