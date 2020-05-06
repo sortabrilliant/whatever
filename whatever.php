@@ -5,7 +5,7 @@
  * Description: With Whatever you can embed whatever you want in your WordPress site.
  * Author:      sorta brilliant
  * Author URI:  https://sortabrilliant.com/
- * Version:     1.1.0
+ * Version:     1.1.1
  * License:     GPL-2.0-or-later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
